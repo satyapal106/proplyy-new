@@ -14,8 +14,8 @@ export const Footer = () => {
                                 <div className="footer-widget">
                                     <div className="widget-about">
                                         <Image
-                                            src="assets/images/logo/logo.png"
-                                            width="150px"
+                                            src="/assets/images/logo/logo.png"
+                                            width={150} height={100}
                                             alt=""
                                             className="img-fluid"
                                         />

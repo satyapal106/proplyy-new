@@ -50,7 +50,9 @@ const FeatureService = () => {
                       <div className="zoom-effect">
                         <Image
                           className="img-responsive"
-                          src="assets/images/house/our-properties-1.jpg"
+                          src="/assets/images/house/our-properties-1.jpg"
+                          width={500}
+                          height={300}
                           alt="Property 1"
                         />
                       </div>
@@ -79,7 +81,9 @@ const FeatureService = () => {
                       <div className="zoom-effect">
                         <Image
                           className="img-responsive"
-                          src="assets/images/house/our-properties-2.jpg"
+                          src="/assets/images/house/our-properties-2.jpg"
+                          width={500}
+                          height={300}
                           alt="Property 2"
                         />
                       </div>
@@ -108,7 +112,9 @@ const FeatureService = () => {
                       <div className="zoom-effect">
                         <Image
                           className="img-responsive"
-                          src="assets/images/house/our-properties-3.jpg"
+                          src="/assets/images/house/our-properties-3.jpg"
+                          width={500}
+                          height={300}
                           alt="Property 3"
                         />
                       </div>
@@ -137,7 +143,9 @@ const FeatureService = () => {
                       <div className="zoom-effect">
                         <Image
                           className="img-responsive"
-                          src="assets/images/house/our-properties-4.jpg"
+                          src="/assets/images/house/our-properties-4.jpg"
+                          width={500}
+                          height={300}
                           alt="Property 4"
                         />
                       </div>
@@ -166,7 +174,9 @@ const FeatureService = () => {
                       <div className="zoom-effect">
                         <Image
                           className="img-responsive"
-                          src="assets/images/house/our-properties-5.jpg"
+                          src="/assets/images/house/our-properties-5.jpg"
+                          width={500}
+                          height={300}
                           alt="Property 5"
                         />
                       </div>
@@ -195,7 +205,9 @@ const FeatureService = () => {
                       <div className="zoom-effect">
                         <Image
                           className="img-responsive"
-                          src="assets/images/house/our-properties-3.jpg"
+                          src="/assets/images/house/our-properties-3.jpg"
+                          width={500}
+                          height={300}
                           alt="Property 6"
                         />
                       </div>

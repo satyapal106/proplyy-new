@@ -14,7 +14,7 @@ export const Navbar = () => {
         <div className="container">
           {/* Left Logo for Mobile View */}
           <Link href="#" className="navbar-brand cursor-scale small d-lg-none">
-            <Image src="assets/images/logo/logo.png" width="150px" alt="Logo" />
+            <Image src="/assets/images/logo/logo.png" width={150} height={100} alt="Logo" />
           </Link>
 
           {/* Toggler for Mobile View on the Right */}
@@ -49,7 +49,7 @@ export const Navbar = () => {
 
             {/* Centered Logo for Desktop View */}
             <Link href="#" className="navbar-brand mx-auto d-none d-lg-block cursor-scale">
-              <Image src="assets/images/logo/logo.png" width="200px" alt="Logo" />
+              <Image src="/assets/images/logo/logo.png" width={200} height={70} alt="Logo" />
             </Link>
 
             {/* Right Navigation Menu */}

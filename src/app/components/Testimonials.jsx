@@ -56,17 +56,21 @@ const Testimonials = () => {
                   <div className="swiper-slide--inner text-center">
                     <div className="slide-avatar mb-3">
                       <Image
-                        src="https://imgpanda.com/upload/ib/3T9Coa4eFQ.png"
+                        src="/assets/images/author/author-1.png"
+                        width={150}
+                        height={150}
                         alt="Avatar"
                         className="img-fluid"
                       />
                     </div>
                     <div className="testimonial-detail">
-                      <Image
-                        src="https://imgpanda.com/upload/ib/07fXcY3EIH.png"
+                      {/* <Image
+                        src="/assets/images/author/author-2.png"
+                        width={100}
+                        height={100}
                         alt="Company Logo"
                         className="img-fluid mb-3"
-                      />
+                      /> */}
                       <p className="testimonial-text">
                         Their team is easy to work with and helped me make
                         amazing websites in a short amount of time. Thanks
@@ -83,17 +87,21 @@ const Testimonials = () => {
                   <div className="swiper-slide--inner text-center">
                     <div className="slide-avatar mb-3">
                       <Image
-                        src="https://imgpanda.com/upload/ib/EG2hj3Ch4z.png"
+                        src="/assets/images/author/author-4.png"
                         alt="Avatar"
+                        width={150}
+                        height={150}
                         className="img-fluid"
                       />
                     </div>
                     <div className="testimonial-detail">
-                      <Image
-                        src="https://imgpanda.com/upload/ib/VUrKtb4s8h.png"
+                      {/* <Image
+                        src="/assets/images/author/author-5.png"
                         alt="Company Logo"
+                        width={100}
+                        height={100}
                         className="img-fluid mb-3"
-                      />
+                      /> */}
                       <p className="testimonial-text">
                         Their team is easy to work with and helped me make
                         amazing websites in a short amount of time. Thanks
@@ -110,17 +118,21 @@ const Testimonials = () => {
                   <div className="swiper-slide--inner text-center">
                     <div className="slide-avatar mb-3">
                       <Image
-                        src="https://imgpanda.com/upload/ib/CEnecSuafy.png"
+                        src="/assets/images/author/author-6.png"
+                        width={150}
+                        height={150}
                         alt="Avatar"
                         className="img-fluid"
                       />
                     </div>
                     <div className="testimonial-detail">
-                      <Image
-                        src="https://imgpanda.com/upload/ib/qisrv7T2JJ.png"
+                      {/* <Image
+                        src="/assets/images/author/author-3.png"
                         alt="Company Logo"
+                        width={100}
+                        height={100}
                         className="img-fluid mb-3"
-                      />
+                      /> */}
                       <p className="testimonial-text">
                         Their team is easy to work with and helped me make
                         amazing websites in a short amount of time. Thanks

@@ -86,8 +86,8 @@ const BlogSlider = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <Image src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt="" className="bg" />
-            <Image src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png" alt="" className="bg2" />
+            <Image src="/assets/images/section/bg1.webp" width={500} height={500} alt="" className="bg" />
+            <Image src="/assets/images/section/bg1.webp" width={500} height={500} alt="" className="bg2" />
         </main>
     );
 };

@@ -24,13 +24,13 @@ const ServiceSlider = () => {
 
           <div className="col-md-12">
             <Swiper
-               modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+              modules={[Navigation, Pagination, Scrollbar, Autoplay]}
               spaceBetween={30}
               autoplay={{
                 delay: 4000,
                 disableOnInteraction: false,
-             }}
-             navigation={true}
+              }}
+              navigation={true}
               slidesPerView={1}
               breakpoints={{
                 640: {
@@ -47,7 +47,12 @@ const ServiceSlider = () => {
             >
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 1" />
+                  <Image 
+                  src="/assets/images/house/our-properties-1.jpg" 
+                  width={500}
+                  height={300}
+                  alt="Service 1" 
+                  />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 1</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
@@ -57,7 +62,10 @@ const ServiceSlider = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 2" />
+                  <Image src="/assets/images/house/our-properties-1.jpg"
+                   width={500}
+                   height={300} 
+                  alt="Service 2" />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 2</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
@@ -67,7 +75,12 @@ const ServiceSlider = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 3" />
+                  <Image 
+                    src="/assets/images/house/our-properties-1.jpg" 
+                    width={500}
+                    height={300}
+                    alt="Service 3" 
+                  />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 3</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
@@ -77,7 +90,12 @@ const ServiceSlider = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 4" />
+                  <Image 
+                  src="/assets/images/house/our-properties-1.jpg" 
+                  width={500}
+                  height={300}
+                  alt="Service 4" 
+                  />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 4</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
