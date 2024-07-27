@@ -47,7 +47,7 @@ const ServiceSlider = () => {
             >
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <img src="assets/images/house/our-properties-1.jpg" alt="Service 1" />
+                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 1" />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 1</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
@@ -57,7 +57,7 @@ const ServiceSlider = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <img src="assets/images/house/our-properties-1.jpg" alt="Service 2" />
+                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 2" />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 2</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
@@ -67,7 +67,7 @@ const ServiceSlider = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <img src="assets/images/house/our-properties-1.jpg" alt="Service 3" />
+                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 3" />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 3</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>
@@ -77,7 +77,7 @@ const ServiceSlider = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="newsCard news-Slide-up">
-                  <img src="assets/images/house/our-properties-1.jpg" alt="Service 4" />
+                  <Image src="assets/images/house/our-properties-1.jpg" alt="Service 4" />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 4</h2>
                     <p className="newsCaption-content">Blurb to get reader hooked.</p>

@@ -23,7 +23,7 @@ const Testimonials = () => {
           <div className="row">
             <div className="col-12">
               <h2 className="cursor-scale testimonial-heading text-center">
-                Trusted by the world's fastest growing companies
+                {`Trusted by the world's fastest growing companies`}
               </h2>
             </div>
           </div>
@@ -55,14 +55,14 @@ const Testimonials = () => {
                 <SwiperSlide>
                   <div className="swiper-slide--inner text-center">
                     <div className="slide-avatar mb-3">
-                      <img
+                      <Image
                         src="https://imgpanda.com/upload/ib/3T9Coa4eFQ.png"
                         alt="Avatar"
                         className="img-fluid"
                       />
                     </div>
                     <div className="testimonial-detail">
-                      <img
+                      <Image
                         src="https://imgpanda.com/upload/ib/07fXcY3EIH.png"
                         alt="Company Logo"
                         className="img-fluid mb-3"
@@ -74,7 +74,7 @@ const Testimonials = () => {
                         very long time.
                       </p>
                       <span className="testimonial-author">
-                        Herman Miller, Monday
+                       {` Herman Miller, Monday`}
                       </span>
                     </div>
                   </div>
@@ -82,14 +82,14 @@ const Testimonials = () => {
                 <SwiperSlide>
                   <div className="swiper-slide--inner text-center">
                     <div className="slide-avatar mb-3">
-                      <img
+                      <Image
                         src="https://imgpanda.com/upload/ib/EG2hj3Ch4z.png"
                         alt="Avatar"
                         className="img-fluid"
                       />
                     </div>
                     <div className="testimonial-detail">
-                      <img
+                      <Image
                         src="https://imgpanda.com/upload/ib/VUrKtb4s8h.png"
                         alt="Company Logo"
                         className="img-fluid mb-3"
@@ -109,14 +109,14 @@ const Testimonials = () => {
                 <SwiperSlide>
                   <div className="swiper-slide--inner text-center">
                     <div className="slide-avatar mb-3">
-                      <img
+                      <Image
                         src="https://imgpanda.com/upload/ib/CEnecSuafy.png"
                         alt="Avatar"
                         className="img-fluid"
                       />
                     </div>
                     <div className="testimonial-detail">
-                      <img
+                      <Image
                         src="https://imgpanda.com/upload/ib/qisrv7T2JJ.png"
                         alt="Company Logo"
                         className="img-fluid mb-3"

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Image from 'next/image';
 
 export const Navbar = () => {
 
@@ -13,7 +14,7 @@ export const Navbar = () => {
         <div className="container">
           {/* Left Logo for Mobile View */}
           <Link href="#" className="navbar-brand cursor-scale small d-lg-none">
-            <img src="assets/images/logo/logo.png" width="150px" alt="Logo" />
+            <Image src="assets/images/logo/logo.png" width="150px" alt="Logo" />
           </Link>
 
           {/* Toggler for Mobile View on the Right */}
@@ -48,7 +49,7 @@ export const Navbar = () => {
 
             {/* Centered Logo for Desktop View */}
             <Link href="#" className="navbar-brand mx-auto d-none d-lg-block cursor-scale">
-              <img src="assets/images/logo/logo.png" width="200px" alt="Logo" />
+              <Image src="assets/images/logo/logo.png" width="200px" alt="Logo" />
             </Link>
 
             {/* Right Navigation Menu */}

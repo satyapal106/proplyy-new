@@ -11,7 +11,7 @@ export const LastContent = () => {
                         style={{ visibility: "visible", animationName: "fadeInUp" }}
                     >
                         We have much more, <br />
-                        let's get started
+                        {`let's get started`}
                     </div>
                     <div
                         className="text wow fadeInUp animated"
