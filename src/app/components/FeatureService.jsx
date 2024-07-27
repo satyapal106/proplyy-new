@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, Autoplay, Parallax } from 'swiper/modules';
 import 'swiper/css';
@@ -11,6 +11,11 @@ import Image from 'next/image';
 import './FeatureService.css';
 
 const FeatureService = () => {
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const openModal = () => setModalVisible(true);
+  const closeModal = () => setModalVisible(false);
+
   return (
     <section className="featured-service">
       <div className="container">
@@ -24,8 +29,8 @@ const FeatureService = () => {
               loop={true}
               centeredSlides={true}
               autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
+                delay: 4000,
+                disableOnInteraction: false,
               }}
               navigation={true}
               slidesPerView={1}
@@ -65,7 +70,7 @@ const FeatureService = () => {
                       <button type="button" className="btn btn-info">
                         Read More
                       </button>
-                      <div className="card-button">
+                      <div className="card-button" onClick={openModal}>
                         <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                     </div>
@@ -96,7 +101,7 @@ const FeatureService = () => {
                       <button type="button" className="btn btn-info">
                         Read More
                       </button>
-                      <div className="card-button">
+                      <div className="card-button" onClick={openModal}>
                         <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                     </div>
@@ -127,7 +132,7 @@ const FeatureService = () => {
                       <button type="button" className="btn btn-info">
                         Read More
                       </button>
-                      <div className="card-button">
+                      <div className="card-button" onClick={openModal}>
                         <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                     </div>
@@ -158,7 +163,7 @@ const FeatureService = () => {
                       <button type="button" className="btn btn-info">
                         Read More
                       </button>
-                      <div className="card-button">
+                      <div className="card-button" onClick={openModal}>
                         <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                     </div>
@@ -189,7 +194,7 @@ const FeatureService = () => {
                       <button type="button" className="btn btn-info">
                         Read More
                       </button>
-                      <div className="card-button">
+                      <div className="card-button" onClick={openModal}>
                         <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                     </div>
@@ -220,13 +225,24 @@ const FeatureService = () => {
                       <button type="button" className="btn btn-info">
                         Read More
                       </button>
-                      <div className="card-button">
+                      <div className="card-button" onClick={openModal}>
                         <i className="fa fa-share-alt" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
+
+              {modalVisible && (
+                <div className="modal">
+                  <div className="modal-content">
+                    <span className="close-button" onClick={closeModal}>&times;</span>
+                    <h2>Share This Property</h2>
+                    <p>Here you can share the property details...</p>
+                    {/* Add share options or content here */}
+                  </div>
+                </div>
+              )}
 
             </Swiper>
           </div>
