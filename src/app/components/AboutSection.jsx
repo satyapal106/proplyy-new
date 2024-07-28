@@ -1,42 +1,9 @@
 'use client'
-import { useState, useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AboutSection.css';
 
 const AboutSection = () => {
-
-  const h1Ref = useRef(null);
-  const pRef = useRef(null);
-
-  useEffect(() => {
-    gsap.from(h1Ref.current, {
-      scrollTrigger: {
-        trigger: h1Ref.current,
-        start: 'top 80%',
-        end: 'bottom 30%',
-        scrub: true,
-      },
-      opacity: 0,
-      y: -50,
-      duration: 1,
-    });
-
-    gsap.from(pRef.current, {
-      scrollTrigger: {
-        trigger: pRef.current,
-        start: 'top 80%',
-        end: 'bottom 30%',
-        scrub: true,
-      },
-      opacity: 0,
-      x: 50,
-      duration: 1,
-    });
-  }, []);
-
   const [activeTab, setActiveTab] = useState('developers');
   const [hoveredTab, setHoveredTab] = useState(null);
 
@@ -73,7 +40,7 @@ const AboutSection = () => {
       <div className="container">
         <div id="custom-solutions" className="row align-items-center">
           <div className="col-md-9 col-sm-12">
-            <h1 ref={pRef} className="cursor-scale about-heading">Customized solutions, crafted <br /> in collaboration!</h1>
+            <h1 className="cursor-scale">Customized solutions, crafted <br /> in collaboration!</h1>
             <span>If you are a</span>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
               <li className="nav-item" role="presentation">
