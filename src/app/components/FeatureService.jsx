@@ -11,10 +11,63 @@ import Image from 'next/image';
 import './FeatureService.css';
 
 const FeatureService = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
 
-  const [modalVisible, setModalVisible] = useState(false);
-  const openModal = () => setModalVisible(true);
-  const closeModal = () => setModalVisible(false);
+  const properties = [
+    {
+      id: 1,
+      title: 'Property 1',
+      description: 'Property 1 description and details',
+      image: '/assets/images/house/our-properties-1.jpg',
+      points: ['Spacious living room', 'Modern kitchen', 'Large garden'],
+    },
+    {
+      id: 2,
+      title: 'Property 2',
+      description: 'Property 2 description and details',
+      image: '/assets/images/house/our-properties-2.jpg',
+      points: ['Beachfront view', 'Private pool', 'Luxurious design'],
+    },
+    {
+      id: 3,
+      title: 'Property 3',
+      description: 'Property 3 description and details',
+      image: '/assets/images/house/our-properties-3.jpg',
+      points: ['City center location', 'Rooftop terrace', 'Gym and sauna'],
+    },
+    {
+      id: 4,
+      title: 'Property 4',
+      description: 'Property 4 description and details',
+      image: '/assets/images/house/our-properties-4.jpg',
+      points: ['Eco-friendly features', 'Open-plan layout', 'Scenic surroundings'],
+    },
+    {
+      id: 5,
+      title: 'Property 5',
+      description: 'Property 5 description and details',
+      image: '/assets/images/house/our-properties-5.jpg',
+      points: ['Historic architecture', 'Wine cellar', 'Library and study'],
+    },
+    {
+      id: 6,
+      title: 'Property 6',
+      description: 'Property 6 description and details',
+      image: '/assets/images/house/our-properties-3.jpg',
+      points: ['Gated community', 'Multi-car garage', 'Home theater'],
+    },
+  ];
+
+  const openModal = (content) => {
+    setModalContent(content);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent(null);
+  };
 
   return (
     <section className="featured-service">
@@ -47,207 +100,56 @@ const FeatureService = () => {
                 },
               }}
             >
-              {/* SwiperSlide 1 */}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="card">
-                    <div className="card-img">
-                      <div className="zoom-effect">
-                        <Image
-                          className="img-responsive"
-                          src="/assets/images/house/our-properties-1.jpg"
-                          width={500}
-                          height={300}
-                          alt="Property 1"
-                        />
+              {properties.map((property) => (
+                <SwiperSlide key={property.id}>
+                  <div className="item">
+                    <div className="card">
+                      <div className="card-img">
+                        <div className="zoom-effect">
+                          <Image
+                            className="img-responsive"
+                            src={property.image}
+                            width={500}
+                            height={300}
+                            alt={property.title}
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="card-info">
-                      <p className="text-title">Property 1</p>
-                      <p className="text-body">Property 1 description and details</p>
-                    </div>
-                    <div className="card-footer">
-                      <button type="button" className="btn btn-info">
-                        Read More
-                      </button>
-                      <div className="card-button" onClick={openModal}>
-                        <i className="fa fa-share-alt" aria-hidden="true"></i>
+                      <div className="card-info">
+                        <p className="text-title">{property.title}</p>
+                        <p className="text-body">{property.description}</p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* SwiperSlide 2 */}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="card">
-                    <div className="card-img">
-                      <div className="zoom-effect">
-                        <Image
-                          className="img-responsive"
-                          src="/assets/images/house/our-properties-2.jpg"
-                          width={500}
-                          height={300}
-                          alt="Property 2"
-                        />
-                      </div>
-                    </div>
-                    <div className="card-info">
-                      <p className="text-title">Property 2</p>
-                      <p className="text-body">Property 2 description and details</p>
-                    </div>
-                    <div className="card-footer">
-                      <button type="button" className="btn btn-info">
-                        Read More
-                      </button>
-                      <div className="card-button" onClick={openModal}>
-                        <i className="fa fa-share-alt" aria-hidden="true"></i>
+                      <div className="card-footer">
+                        <button type="button" className="btn btn-info">
+                          Read More
+                        </button>
+                        <div
+                          className="card-button"
+                          onClick={() => openModal(property.points)}
+                        >
+                          <i className="fa fa-eye" aria-hidden="true"></i>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-
-              {/* SwiperSlide 3 */}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="card">
-                    <div className="card-img">
-                      <div className="zoom-effect">
-                        <Image
-                          className="img-responsive"
-                          src="/assets/images/house/our-properties-3.jpg"
-                          width={500}
-                          height={300}
-                          alt="Property 3"
-                        />
-                      </div>
-                    </div>
-                    <div className="card-info">
-                      <p className="text-title">Property 3</p>
-                      <p className="text-body">Property 3 description and details</p>
-                    </div>
-                    <div className="card-footer">
-                      <button type="button" className="btn btn-info">
-                        Read More
-                      </button>
-                      <div className="card-button" onClick={openModal}>
-                        <i className="fa fa-share-alt" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* SwiperSlide 4 */}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="card">
-                    <div className="card-img">
-                      <div className="zoom-effect">
-                        <Image
-                          className="img-responsive"
-                          src="/assets/images/house/our-properties-4.jpg"
-                          width={500}
-                          height={300}
-                          alt="Property 4"
-                        />
-                      </div>
-                    </div>
-                    <div className="card-info">
-                      <p className="text-title">Property 4</p>
-                      <p className="text-body">Property 4 description and details</p>
-                    </div>
-                    <div className="card-footer">
-                      <button type="button" className="btn btn-info">
-                        Read More
-                      </button>
-                      <div className="card-button" onClick={openModal}>
-                        <i className="fa fa-share-alt" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* SwiperSlide 5 */}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="card">
-                    <div className="card-img">
-                      <div className="zoom-effect">
-                        <Image
-                          className="img-responsive"
-                          src="/assets/images/house/our-properties-5.jpg"
-                          width={500}
-                          height={300}
-                          alt="Property 5"
-                        />
-                      </div>
-                    </div>
-                    <div className="card-info">
-                      <p className="text-title">Property 5</p>
-                      <p className="text-body">Property 5 description and details</p>
-                    </div>
-                    <div className="card-footer">
-                      <button type="button" className="btn btn-info">
-                        Read More
-                      </button>
-                      <div className="card-button" onClick={openModal}>
-                        <i className="fa fa-share-alt" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* SwiperSlide 6 */}
-              <SwiperSlide>
-                <div className="item">
-                  <div className="card">
-                    <div className="card-img">
-                      <div className="zoom-effect">
-                        <Image
-                          className="img-responsive"
-                          src="/assets/images/house/our-properties-3.jpg"
-                          width={500}
-                          height={300}
-                          alt="Property 6"
-                        />
-                      </div>
-                    </div>
-                    <div className="card-info">
-                      <p className="text-title">Property 6</p>
-                      <p className="text-body">Property 6 description and details</p>
-                    </div>
-                    <div className="card-footer">
-                      <button type="button" className="btn btn-info">
-                        Read More
-                      </button>
-                      <div className="card-button" onClick={openModal}>
-                        <i className="fa fa-share-alt" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {modalVisible && (
-                <div className="modal">
-                  <div className="modal-content">
-                    <span className="close-button" onClick={closeModal}>&times;</span>
-                    <h2>Share This Property</h2>
-                    <p>Here you can share the property details...</p>
-                    {/* Add share options or content here */}
-                  </div>
-                </div>
-              )}
-
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
       </div>
+      {isModalOpen && modalContent && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>&times;</span>
+            <ul>
+              {modalContent.map((point, index) => (
+                <li key={index}> {point} </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

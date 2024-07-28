@@ -1,5 +1,16 @@
 /* styles/testimonialSlider.css */
-
+.creative-testimonial--slider .swiper-button-prev:after, .creative-testimonial--slider .swiper-button-next:after {
+  border-radius: 50%;
+  font-family: 'swiper-icons';
+  font-size: 20px!important;
+  width: 35px;
+  padding: 5px 13px!important;
+  height: 35px;
+  color: #fff;
+  background:#063078;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, .2);
+}
 .creative-testimonial--slider {
     background-image: linear-gradient(to bottom, #f7f7ff, #f4f4fb, #f8f7fc, #fbfbfe, #ffffff);
     padding: 50px 0;

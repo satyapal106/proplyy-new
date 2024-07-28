@@ -50,7 +50,7 @@ const ServiceSlider = () => {
                   <Image 
                   src="/assets/images/house/our-properties-1.jpg" 
                   width={500}
-                  height={300}
+                  height={500}
                   alt="Service 1" 
                   />
                   <div className="newsCaption">
@@ -64,7 +64,7 @@ const ServiceSlider = () => {
                 <div className="newsCard news-Slide-up">
                   <Image src="/assets/images/house/our-properties-1.jpg"
                    width={500}
-                   height={300} 
+                   height={500} 
                   alt="Service 2" />
                   <div className="newsCaption">
                     <h2 className="newsCaption-title">Title 2</h2>
@@ -78,7 +78,7 @@ const ServiceSlider = () => {
                   <Image 
                     src="/assets/images/house/our-properties-1.jpg" 
                     width={500}
-                    height={300}
+                    height={500}
                     alt="Service 3" 
                   />
                   <div className="newsCaption">
@@ -93,7 +93,7 @@ const ServiceSlider = () => {
                   <Image 
                   src="/assets/images/house/our-properties-1.jpg" 
                   width={500}
-                  height={300}
+                  height={500}
                   alt="Service 4" 
                   />
                   <div className="newsCaption">

@@ -1,3 +1,7 @@
+/* swiper pre next button */
+
+/* .navbar-toggler-close{width: 40px;height: 40px;border-radius: 50%!important;} */
+
 /* Custom Cursor*/
 
 .cursor {
@@ -32,11 +36,18 @@
   cursor: none;
 }
 
+@media only screen and (max-width:767px){
+  .cursor-scale {cursor: pointer;}
+  .cursor{display: none;}
+  .cursor.grow{display: none;}
+  .cursor.grow-small{display: none;}
+}
+
 
 /* Counter Section*/
 :root{ 
   --white: #fff;
-  --color2: #b658c3;
+  --color2: #07388b;
 }
 .counter-setion{padding: 50px 0px;}
 .counter{
@@ -90,7 +101,7 @@
   display: block;
 }
 @media screen and (max-width:990px){
-  .counter{ margin-bottom: 40px; }
+  .counter{ margin-bottom: 20px; width: 200px;height: 200px;}
 } 
 
 

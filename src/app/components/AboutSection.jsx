@@ -1,9 +1,42 @@
 'use client'
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AboutSection.css';
 
 const AboutSection = () => {
+
+  const h1Ref = useRef(null);
+  const pRef = useRef(null);
+
+  useEffect(() => {
+    gsap.from(h1Ref.current, {
+      scrollTrigger: {
+        trigger: h1Ref.current,
+        start: 'top 80%',
+        end: 'bottom 30%',
+        scrub: true,
+      },
+      opacity: 0,
+      y: -50,
+      duration: 1,
+    });
+
+    gsap.from(pRef.current, {
+      scrollTrigger: {
+        trigger: pRef.current,
+        start: 'top 80%',
+        end: 'bottom 30%',
+        scrub: true,
+      },
+      opacity: 0,
+      x: 50,
+      duration: 1,
+    });
+  }, []);
+
   const [activeTab, setActiveTab] = useState('developers');
   const [hoveredTab, setHoveredTab] = useState(null);
 
@@ -40,7 +73,7 @@ const AboutSection = () => {
       <div className="container">
         <div id="custom-solutions" className="row align-items-center">
           <div className="col-md-9 col-sm-12">
-            <h1 className="cursor-scale">Customized solutions, crafted <br /> in collaboration!</h1>
+            <h1 ref={pRef} className="cursor-scale about-heading">Customized solutions, crafted <br /> in collaboration!</h1>
             <span>If you are a</span>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
               <li className="nav-item" role="presentation">
@@ -102,32 +135,16 @@ const AboutSection = () => {
             </ul>
             <div className="tab-content mt-3" id="myTabContent">
               <div className={`tab-pane fade ${activeTab === 'developers' ? 'show active' : ''}`} id="developers" role="tabpanel" aria-labelledby="developers-tab">
-                <ul className="list-group">
-                  <li className="list-group-item"><a href="#">Developer Resource 1</a></li>
-                  <li className="list-group-item"><a href="#">Developer Resource 2</a></li>
-                  <li className="list-group-item"><a href="#">Developer Resource 3</a></li>
-                </ul>
+                <p>Developer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className={`tab-pane fade ${activeTab === 'partners' ? 'show active' : ''}`} id="partners" role="tabpanel" aria-labelledby="partners-tab">
-                <ul className="list-group">
-                  <li className="list-group-item">Partner Resource 1</li>
-                  <li className="list-group-item">Partner Resource 2</li>
-                  <li className="list-group-item">Partner Resource 3</li>
-                </ul>
+                <p>Channel Partner Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className={`tab-pane fade ${activeTab === 'corporates' ? 'show active' : ''}`} id="corporates" role="tabpanel" aria-labelledby="corporates-tab">
-                <ul className="list-group">
-                  <li className="list-group-item">Corporate Resource 1</li>
-                  <li className="list-group-item">Corporate Resource 2</li>
-                  <li className="list-group-item">Corporate Resource 3</li>
-                </ul>
+                <p>Corporates Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
               <div className={`tab-pane fade ${activeTab === 'consumers' ? 'show active' : ''}`} id="consumers" role="tabpanel" aria-labelledby="consumers-tab">
-                <ul className="list-group">
-                  <li className="list-group-item">Consumer Resource 1</li>
-                  <li className="list-group-item">Consumer Resource 2</li>
-                  <li className="list-group-item">Consumer Resource 3</li>
-                </ul>
+                <p>Consumers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
             </div>
           </div>

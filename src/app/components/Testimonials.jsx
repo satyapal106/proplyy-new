@@ -12,13 +12,11 @@ import './Testimonials.css';
 
 const Testimonials = () => {
   return (
-    <section className="creative-testimonial--slider">
-      <div
-        className="testimonial-inner"
-        style={{
-          backgroundImage: 'url(https://imgpanda.com/upload/ib/2Tgg58L106.png)',
-        }}
-      >
+    <section className="creative-testimonial--slider" 
+      style={{
+        backgroundImage: 'url(https://imgpanda.com/upload/ib/2Tgg58L106.png)',
+      }}>
+      <div className="testimonial-inner">
         <div className="container">
           <div className="row">
             <div className="col-12">

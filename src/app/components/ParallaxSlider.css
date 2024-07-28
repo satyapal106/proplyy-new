@@ -403,3 +403,19 @@
       display: block;
     }
   }
+
+
+  /*swiper  pre next button*/
+
+  .creative-parallax--slider .swiper-button-prev:after, .creative-parallax--slider .swiper-button-next:after {
+    border-radius: 50%;
+    font-family: 'swiper-icons';
+    font-size: 20px!important;
+    width: 35px;
+    padding: 5px 13px!important;
+    height: 35px;
+    color: #000;
+    background:#ffffff;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, .2);
+  }

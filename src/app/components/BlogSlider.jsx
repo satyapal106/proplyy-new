@@ -20,9 +20,10 @@ const BlogSlider = () => {
                 grabCursor={true}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
+                navigation
                 coverflowEffect={{
                     rotate: 0,
                     stretch: 0,
@@ -33,7 +34,6 @@ const BlogSlider = () => {
                 keyboard={{ enabled: true }}
                 // mousewheel={{ thresholdDelta: 70 }}
                 loop={true}
-                pagination={{ clickable: true }}
                 breakpoints={{
                     640: {
                         slidesPerView: 1

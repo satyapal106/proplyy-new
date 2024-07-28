@@ -37,25 +37,25 @@ const CounterSection = () => {
         <div className="counter-setion">
             <div className="container">
                 <div className="row">
-                    <div className="col col-md-3 col-sm-6">
+                    <div className="col-6 col-md-3 col-sm-6">
                         <div className="counter">
                             <h3>Web Development</h3>
                             <Counter endValue={515} duration={3500} />
                         </div>
                     </div>
-                    <div className="col col-md-3 col-sm-6">
+                    <div className="col-6 col-md-3 col-sm-6">
                         <div className="counter pink">
                             <h3>Web Development</h3>
                             <Counter endValue={487} duration={3500} />
                         </div>
                     </div>
-                    <div className="col col-md-3 col-sm-6">
+                    <div className="col-6 col-md-3 col-sm-6">
                         <div className="counter pink">
                             <h3>Web Development</h3>
                             <Counter endValue={100} duration={3300}/>
                         </div>
                     </div>
-                    <div className="col col-md-3 col-sm-6">
+                    <div className="col-6 col-md-3 col-sm-6">
                         <div className="counter pink">
                             <h3>Web Development</h3>
                             <Counter endValue={100} duration={3300}/>
